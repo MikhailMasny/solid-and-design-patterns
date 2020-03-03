@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Masny.SOLID
+namespace Masny.SOLID.SRP
 {
     public interface IFirstAction
     {
