@@ -65,7 +65,4 @@ namespace Masny.SOLID.OCP
             someClass.Start(list);
         }
     }
-
-    // TODO: var OCP = new OpenClosedPrinciple();
-    // OCP.Start();
 }

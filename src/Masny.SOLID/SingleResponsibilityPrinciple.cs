@@ -71,7 +71,4 @@ namespace Masny.SOLID.SRP
             Console.WriteLine("End of start method.");
         }
     }
-
-    // TODO: var SRP = new SingleResponsibilityPrinciple(new FirstAction(), new SecondAction());
-    // SRP.Start();
 }

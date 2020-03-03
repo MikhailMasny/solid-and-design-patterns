@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Masny.SOLID.OCP;
+using Masny.SOLID.SRP;
+using System;
 
 namespace Masny.ConsoleApp
 {
@@ -6,7 +8,13 @@ namespace Masny.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //var SRP = new SingleResponsibilityPrinciple(new FirstAction(), new SecondAction());
+            //SRP.Start();
+
+            //var OCP = new OpenClosedPrinciple();
+            //OCP.Start();
+
+            Console.ReadLine();
         }
     }
 }
