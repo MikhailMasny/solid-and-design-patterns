@@ -29,12 +29,27 @@ namespace Masny.SOLID.OCP
     {
         protected override void FirstAction()
         {
-            Console.WriteLine("Second class. First action.");
+            Console.WriteLine("Some text before.");
+            base.FirstAction();
         }
 
         protected override void SecondAction()
         {
-            Console.WriteLine("Second class. Second action.");
+            base.SecondAction();
+            Console.WriteLine("Some text after.");
+        }
+    }
+
+    public class ThirdClass : BaseClass
+    {
+        protected override void FirstAction()
+        {
+            Console.WriteLine("Third class. First action.");
+        }
+
+        protected override void SecondAction()
+        {
+            Console.WriteLine("Third class. Second action.");
         }
     }
 
@@ -50,7 +65,11 @@ namespace Masny.SOLID.OCP
         public void Start(IEnumerable<BaseClass> list)
         {
             list.ToList()
-                .ForEach(item => item.Run());
+                .ForEach(item =>
+                {
+                    item.Run();
+                    Console.WriteLine();
+                });
 
             Console.WriteLine($"End of start method. {Property}");
         }
@@ -60,7 +79,7 @@ namespace Masny.SOLID.OCP
     {
         public void Start()
         {
-            IEnumerable<BaseClass> list = new List<BaseClass> { new FirstClass(), new SecondClass() };
+            IEnumerable<BaseClass> list = new List<BaseClass> { new FirstClass(), new SecondClass(), new ThirdClass() };
             var someClass = new SomeClass("Property from main class!");
             someClass.Start(list);
         }
