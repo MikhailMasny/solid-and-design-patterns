@@ -13,11 +13,13 @@ namespace Masny.SOLID.SRP
     {
         public IEnumerable<string> ReadAction()
         {
-            Console.WriteLine("Enter some value:");
+            Console.Write("Enter some string value: ");
             var valueOne = Console.ReadLine();
 
-            Console.WriteLine("Enter another value:");
+            Console.Write("Enter another string value: ");
             var valueTwo = Console.ReadLine();
+
+            Console.WriteLine();
 
             return new List<string> { valueOne, valueTwo };
         }
@@ -68,7 +70,7 @@ namespace Masny.SOLID.SRP
             var list = _firstAction.ReadAction();
             _secondAction.ShowAction(list);
 
-            Console.WriteLine("End of start method.");
+            Console.WriteLine("\nEnd of start method.");
         }
     }
 }
