@@ -1,4 +1,5 @@
-﻿using Masny.SOLID.OCP;
+﻿using Masny.SOLID.ISP;
+using Masny.SOLID.OCP;
 using Masny.SOLID.SRP;
 using System;
 
@@ -13,6 +14,9 @@ namespace Masny.ConsoleApp
 
             //var OCP = new OpenClosedPrinciple();
             //OCP.Start();
+
+            //var ISP = new InterfaceSegregationPrinciple();
+            //ISP.Start();
 
             Console.ReadLine();
         }
