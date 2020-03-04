@@ -1,4 +1,5 @@
-﻿using Masny.SOLID.ISP;
+﻿using Masny.SOLID.DIP;
+using Masny.SOLID.ISP;
 using Masny.SOLID.OCP;
 using Masny.SOLID.SRP;
 using System;
@@ -17,6 +18,9 @@ namespace Masny.ConsoleApp
 
             //var ISP = new InterfaceSegregationPrinciple();
             //ISP.Start();
+
+            //var DIP = new DependencyInversionPrinciple();
+            //DIP.Start();
 
             Console.ReadLine();
         }
