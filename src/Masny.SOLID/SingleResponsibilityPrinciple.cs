@@ -4,12 +4,12 @@ using System.Linq;
 
 namespace Masny.SOLID.SRP
 {
-    public interface IFirstAction
+    interface IFirstAction
     {
         IEnumerable<string> ReadAction();
     }
 
-    public class FirstAction : IFirstAction
+    class FirstAction : IFirstAction
     {
         public IEnumerable<string> ReadAction()
         {
@@ -25,7 +25,7 @@ namespace Masny.SOLID.SRP
         }
     }
 
-    public class AnotherFirstAction : IFirstAction
+    class AnotherFirstAction : IFirstAction
     {
         public IEnumerable<string> ReadAction()
         {
@@ -33,12 +33,12 @@ namespace Masny.SOLID.SRP
         }
     }
 
-    public interface ISecondAction
+    interface ISecondAction
     {
         void ShowAction(IEnumerable<string> list);
     }
 
-    public class SecondAction : ISecondAction
+    class SecondAction : ISecondAction
     {
         public void ShowAction(IEnumerable<string> list)
         {
@@ -53,22 +53,34 @@ namespace Masny.SOLID.SRP
         }
     }
 
-    public class SingleResponsibilityPrinciple
+    class MainClass
     {
         private readonly IFirstAction _firstAction;
         private readonly ISecondAction _secondAction;
 
-        public SingleResponsibilityPrinciple(IFirstAction firstAction,
+        public MainClass(IFirstAction firstAction,
                          ISecondAction secondAction)
         {
             _firstAction = firstAction ?? throw new ArgumentNullException(nameof(firstAction));
             _secondAction = secondAction ?? throw new ArgumentNullException(nameof(secondAction));
         }
 
-        public void Start()
+        public void Run()
         {
             var list = _firstAction.ReadAction();
             _secondAction.ShowAction(list);
+        }
+    }
+
+    public class SingleResponsibilityPrinciple
+    {
+        public void Start()
+        {
+            IFirstAction firstAction = new FirstAction();
+            ISecondAction secondAction = new SecondAction();
+
+            var mainClass = new MainClass(firstAction, secondAction);
+            mainClass.Run();
 
             Console.WriteLine("\nEnd of start method.");
         }

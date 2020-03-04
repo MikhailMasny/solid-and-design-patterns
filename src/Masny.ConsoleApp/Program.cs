@@ -9,7 +9,7 @@ namespace Masny.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //var SRP = new SingleResponsibilityPrinciple(new FirstAction(), new SecondAction());
+            //var SRP = new SingleResponsibilityPrinciple();
             //SRP.Start();
 
             //var OCP = new OpenClosedPrinciple();
