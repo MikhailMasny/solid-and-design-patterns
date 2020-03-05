@@ -34,6 +34,9 @@ namespace Masny.ConsoleApp
             //var decorator = new DecoratorPattern();
             //decorator.Start();
 
+            //var singleton = new SingletonPattern();
+            //singleton.Start();
+
             Console.ReadLine();
         }
     }
