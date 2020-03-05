@@ -1,4 +1,5 @@
 ﻿using Masny.Patterns.Creational;
+using Masny.Patterns.Structural;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
 using Masny.SOLID.LSP;
@@ -29,6 +30,9 @@ namespace Masny.ConsoleApp
 
             //var builder = new BuilderPattern();
             //builder.Start();
+
+            //var decorator = new DecoratorPattern();
+            //decorator.Start();
 
             Console.ReadLine();
         }
