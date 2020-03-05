@@ -37,6 +37,9 @@ namespace Masny.ConsoleApp
             //var singleton = new SingletonPattern();
             //singleton.Start();
 
+            //var strategy = new StrategyPattern();
+            //strategy.Start();
+
             Console.ReadLine();
         }
     }
