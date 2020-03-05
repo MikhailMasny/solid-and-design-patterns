@@ -1,4 +1,5 @@
-﻿using Masny.SOLID.DIP;
+﻿using Masny.Patterns.Creational;
+using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
 using Masny.SOLID.LSP;
 using Masny.SOLID.OCP;
@@ -25,6 +26,9 @@ namespace Masny.ConsoleApp
 
             //var DIP = new DependencyInversionPrinciple();
             //DIP.Start();
+
+            //var builder = new BuilderPattern();
+            //builder.Start();
 
             Console.ReadLine();
         }

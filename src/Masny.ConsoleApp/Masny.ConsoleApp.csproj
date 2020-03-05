@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Masny.Patterns\Masny.Patterns.csproj" />
     <ProjectReference Include="..\Masny.SOLID\Masny.SOLID.csproj" />
   </ItemGroup>
 
