@@ -40,6 +40,9 @@ namespace Masny.ConsoleApp
             //var strategy = new StrategyPattern();
             //strategy.Start();
 
+            //var facade = new FacadePattern();
+            //facade.Start();
+
             Console.ReadLine();
         }
     }
