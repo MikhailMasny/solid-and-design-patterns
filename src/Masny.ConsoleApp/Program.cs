@@ -1,4 +1,5 @@
-﻿using Masny.Patterns.Creational;
+﻿using Masny.Patterns.Behavioral;
+using Masny.Patterns.Creational;
 using Masny.Patterns.Structural;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
@@ -42,6 +43,9 @@ namespace Masny.ConsoleApp
 
             //var facade = new FacadePattern();
             //facade.Start();
+
+            //var observer = new ObserverPattern();
+            //observer.Start();
 
             Console.ReadLine();
         }
