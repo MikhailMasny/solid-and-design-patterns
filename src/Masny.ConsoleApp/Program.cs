@@ -47,6 +47,9 @@ namespace Masny.ConsoleApp
             //var observer = new ObserverPattern();
             //observer.Start();
 
+            //var prototype = new PrototypePattern();
+            //prototype.Start();
+
             Console.ReadLine();
         }
     }
