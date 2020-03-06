@@ -2,6 +2,11 @@
 
 namespace Masny.Patterns.Structural
 {
+    interface IStrategy
+    {
+        void SomeMethod();
+    }
+
     class ConcreteStrategyC : IStrategy
     {
         public void SomeMethod()
@@ -24,11 +29,6 @@ namespace Masny.Patterns.Structural
         {
             Console.WriteLine($"{nameof(ConcreteStrategyA)}.");
         }
-    }
-
-    interface IStrategy
-    {
-        void SomeMethod();
     }
 
     class Context

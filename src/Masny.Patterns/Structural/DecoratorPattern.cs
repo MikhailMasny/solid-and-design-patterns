@@ -26,6 +26,11 @@ namespace Masny.Patterns.Structural
         }
     }
 
+    interface IComponent
+    {
+        void Operation();
+    }
+
     abstract class Decorator : IComponent
 
     {
@@ -51,11 +56,6 @@ namespace Masny.Patterns.Structural
         {
             Console.WriteLine($"{nameof(ConcreteComponent)}.{nameof(Operation)}");
         }
-    }
-
-    interface IComponent
-    {
-        void Operation();
     }
 
     public class DecoratorPattern

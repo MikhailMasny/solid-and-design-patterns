@@ -3,6 +3,42 @@ using System.Collections.Generic;
 
 namespace Masny.Patterns.Creational
 {
+    class Product
+    {
+        private readonly List<string> _parts;
+
+        public string Name { get; set; }
+
+        public Product()
+        {
+            _parts = new List<string>();
+        }
+
+        public void Add(string part)
+        {
+            _parts.Add(part);
+        }
+
+        public void Show()
+        {
+            Console.WriteLine($"Product: {Name}");
+            Console.WriteLine("-------");
+
+            foreach (var part in _parts)
+            {
+                Console.WriteLine(part);
+            }
+        }
+    }
+
+    interface IBuilder
+    {
+        void BuildPartA();
+        void BuildPartB();
+        void SetName();
+        Product GetResult();
+    }
+
     class ConcreteBuilder1 : IBuilder
     {
         private readonly Product _product = new Product();
@@ -53,34 +89,6 @@ namespace Masny.Patterns.Creational
         }
     }
 
-    class Product
-    {
-        private readonly List<string> _parts;
-
-        public string Name { get; set; }
-
-        public Product()
-        {
-            _parts = new List<string>();
-        }
-
-        public void Add(string part)
-        {
-            _parts.Add(part);
-        }
-
-        public void Show()
-        {
-            Console.WriteLine($"Product: {Name}");
-            Console.WriteLine("-------");
-
-            foreach (var part in _parts)
-            {
-                Console.WriteLine(part);
-            }
-        }
-    }
-
     class Director
     {
         public void Construct(IBuilder builder)
@@ -89,14 +97,6 @@ namespace Masny.Patterns.Creational
             builder.BuildPartB();
             builder.SetName();
         }
-    }
-
-    interface IBuilder
-    {
-        void BuildPartA();
-        void BuildPartB();
-        void SetName();
-        Product GetResult();
     }
 
     public class BuilderPattern
