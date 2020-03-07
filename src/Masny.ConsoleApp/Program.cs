@@ -1,6 +1,10 @@
-﻿using Masny.Patterns.Behavioral;
-using Masny.Patterns.Creational;
-using Masny.Patterns.Structural;
+﻿using Masny.Patterns.Behavioral.Observer;
+using Masny.Patterns.Creational.Builder;
+using Masny.Patterns.Creational.Prototype;
+using Masny.Patterns.Creational.Singleton;
+using Masny.Patterns.Structural.Decorator;
+using Masny.Patterns.Structural.Facade;
+using Masny.Patterns.Structural.Strategy;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
 using Masny.SOLID.LSP;

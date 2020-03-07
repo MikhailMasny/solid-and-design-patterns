@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Masny.Patterns.Structural
+namespace Masny.Patterns.Structural.Strategy
 {
     interface IStrategy
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Masny.Patterns.Creational
+namespace Masny.Patterns.Creational.Prototype
 {
     class AnotherClass
     {

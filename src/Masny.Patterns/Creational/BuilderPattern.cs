@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Masny.Patterns.Creational
+namespace Masny.Patterns.Creational.Builder
 {
     class Product
     {

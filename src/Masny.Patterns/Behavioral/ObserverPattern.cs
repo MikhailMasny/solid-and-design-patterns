@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Masny.Patterns.Behavioral
+namespace Masny.Patterns.Behavioral.Observer
 {
     interface IObserver
     {
