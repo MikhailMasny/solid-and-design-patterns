@@ -1,5 +1,6 @@
 ﻿using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Creational.Builder;
+using Masny.Patterns.Creational.Factory;
 using Masny.Patterns.Creational.Prototype;
 using Masny.Patterns.Creational.Singleton;
 using Masny.Patterns.Structural.Decorator;
@@ -53,6 +54,9 @@ namespace Masny.ConsoleApp
 
             //var prototype = new PrototypePattern();
             //prototype.Start();
+
+            //var factory = new FactoryPattern();
+            //factory.Start();
 
             Console.ReadLine();
         }
