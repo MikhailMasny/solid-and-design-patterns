@@ -1,4 +1,5 @@
 ﻿using Masny.Patterns.Behavioral.Observer;
+using Masny.Patterns.Creational.AbstractFactory;
 using Masny.Patterns.Creational.Builder;
 using Masny.Patterns.Creational.Factory;
 using Masny.Patterns.Creational.Prototype;
@@ -57,6 +58,9 @@ namespace Masny.ConsoleApp
 
             //var factory = new FactoryPattern();
             //factory.Start();
+
+            //var abstractFactory = new AbstractFactoryPattern();
+            //abstractFactory.Start();
 
             Console.ReadLine();
         }
