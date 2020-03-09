@@ -4,6 +4,7 @@ using Masny.Patterns.Creational.Builder;
 using Masny.Patterns.Creational.Factory;
 using Masny.Patterns.Creational.Prototype;
 using Masny.Patterns.Creational.Singleton;
+using Masny.Patterns.Structural.Adapter;
 using Masny.Patterns.Structural.Decorator;
 using Masny.Patterns.Structural.Facade;
 using Masny.Patterns.Structural.Strategy;
@@ -61,6 +62,9 @@ namespace Masny.ConsoleApp
 
             //var abstractFactory = new AbstractFactoryPattern();
             //abstractFactory.Start();
+
+            //var adapterPattern = new AdapterPattern();
+            //adapterPattern.Start();
 
             Console.ReadLine();
         }
