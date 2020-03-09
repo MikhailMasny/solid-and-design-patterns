@@ -7,6 +7,7 @@ using Masny.Patterns.Creational.Singleton;
 using Masny.Patterns.Structural.Adapter;
 using Masny.Patterns.Structural.Decorator;
 using Masny.Patterns.Structural.Facade;
+using Masny.Patterns.Structural.Proxy;
 using Masny.Patterns.Structural.Strategy;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
@@ -65,6 +66,9 @@ namespace Masny.ConsoleApp
 
             //var adapterPattern = new AdapterPattern();
             //adapterPattern.Start();
+
+            //var proxyPattern = new ProxyPattern();
+            //proxyPattern.Start();
 
             Console.ReadLine();
         }
