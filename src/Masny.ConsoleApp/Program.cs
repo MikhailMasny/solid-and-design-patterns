@@ -5,6 +5,7 @@ using Masny.Patterns.Creational.Factory;
 using Masny.Patterns.Creational.Prototype;
 using Masny.Patterns.Creational.Singleton;
 using Masny.Patterns.Structural.Adapter;
+using Masny.Patterns.Structural.Bridge;
 using Masny.Patterns.Structural.Decorator;
 using Masny.Patterns.Structural.Facade;
 using Masny.Patterns.Structural.Proxy;
@@ -69,6 +70,9 @@ namespace Masny.ConsoleApp
 
             //var proxyPattern = new ProxyPattern();
             //proxyPattern.Start();
+
+            //var bridgePattern = new BridgePattern();
+            //bridgePattern.Start();
 
             Console.ReadLine();
         }
