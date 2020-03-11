@@ -1,4 +1,5 @@
 ﻿using Masny.Patterns.Behavioral.Observer;
+using Masny.Patterns.Behavioral.State;
 using Masny.Patterns.Behavioral.TemplateMethod;
 using Masny.Patterns.Creational.AbstractFactory;
 using Masny.Patterns.Creational.Builder;
@@ -81,6 +82,9 @@ namespace Masny.ConsoleApp
 
             //var templateMethodPattern = new TemplateMethodPattern();
             //templateMethodPattern.Start();
+
+            //var statePattern = new StatePattern();
+            //statePattern.Start();
 
             Console.ReadLine();
         }
