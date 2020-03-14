@@ -12,6 +12,7 @@ using Masny.Patterns.Structural.Bridge;
 using Masny.Patterns.Structural.Composite;
 using Masny.Patterns.Structural.Decorator;
 using Masny.Patterns.Structural.Facade;
+using Masny.Patterns.Structural.Flyweight;
 using Masny.Patterns.Structural.Proxy;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
@@ -85,6 +86,9 @@ namespace Masny.ConsoleApp
 
             //var statePattern = new StatePattern();
             //statePattern.Start();
+
+            //var flyweightPattern = new FlyweightPattern();
+            //flyweightPattern.Start();
 
             Console.ReadLine();
         }
