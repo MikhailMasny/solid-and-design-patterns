@@ -1,5 +1,6 @@
 ﻿using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
+using Masny.Patterns.Behavioral.Strategy;
 using Masny.Patterns.Behavioral.TemplateMethod;
 using Masny.Patterns.Creational.AbstractFactory;
 using Masny.Patterns.Creational.Builder;
@@ -12,7 +13,6 @@ using Masny.Patterns.Structural.Composite;
 using Masny.Patterns.Structural.Decorator;
 using Masny.Patterns.Structural.Facade;
 using Masny.Patterns.Structural.Proxy;
-using Masny.Patterns.Structural.Strategy;
 using Masny.SOLID.DIP;
 using Masny.SOLID.ISP;
 using Masny.SOLID.LSP;
