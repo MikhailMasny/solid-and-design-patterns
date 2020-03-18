@@ -1,4 +1,5 @@
-﻿using Masny.Patterns.Behavioral.Observer;
+﻿using Masny.Patterns.Behavioral.Iterator;
+using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
 using Masny.Patterns.Behavioral.Strategy;
 using Masny.Patterns.Behavioral.TemplateMethod;
@@ -89,6 +90,9 @@ namespace Masny.ConsoleApp
 
             //var flyweightPattern = new FlyweightPattern();
             //flyweightPattern.Start();
+
+            //var iteratorPattern = new IteratorPattern();
+            //iteratorPattern.Start();
 
             Console.ReadLine();
         }
