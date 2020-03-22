@@ -1,4 +1,5 @@
 ﻿using Masny.Patterns.Behavioral.Iterator;
+using Masny.Patterns.Behavioral.Mediator;
 using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
 using Masny.Patterns.Behavioral.Strategy;
@@ -93,6 +94,9 @@ namespace Masny.ConsoleApp
 
             //var iteratorPattern = new IteratorPattern();
             //iteratorPattern.Start();
+
+            //var mediatorPattern = new MediatorPattern();
+            //mediatorPattern.Start();
 
             Console.ReadLine();
         }
