@@ -1,4 +1,5 @@
-﻿using Masny.Patterns.Behavioral.Iterator;
+﻿using Masny.Patterns.Behavioral.ChainOfResponsibility;
+using Masny.Patterns.Behavioral.Iterator;
 using Masny.Patterns.Behavioral.Mediator;
 using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
@@ -97,6 +98,9 @@ namespace Masny.ConsoleApp
 
             //var mediatorPattern = new MediatorPattern();
             //mediatorPattern.Start();
+
+            //var chainOfResponsibilityPattern = new ChainOfResponsibilityPattern();
+            //chainOfResponsibilityPattern.Start();
 
             Console.ReadLine();
         }
