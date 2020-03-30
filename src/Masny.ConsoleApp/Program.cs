@@ -1,6 +1,7 @@
 ﻿using Masny.Patterns.Behavioral.ChainOfResponsibility;
 using Masny.Patterns.Behavioral.Iterator;
 using Masny.Patterns.Behavioral.Mediator;
+using Masny.Patterns.Behavioral.MementoPattern;
 using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
 using Masny.Patterns.Behavioral.Strategy;
@@ -101,6 +102,9 @@ namespace Masny.ConsoleApp
 
             //var chainOfResponsibilityPattern = new ChainOfResponsibilityPattern();
             //chainOfResponsibilityPattern.Start();
+
+            //var mementoPattern = new MementoPattern();
+            //mementoPattern.Start();
 
             Console.ReadLine();
         }
