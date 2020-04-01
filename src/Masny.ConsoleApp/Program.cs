@@ -8,6 +8,7 @@ using Masny.Patterns.Behavioral.Observer;
 using Masny.Patterns.Behavioral.State;
 using Masny.Patterns.Behavioral.Strategy;
 using Masny.Patterns.Behavioral.TemplateMethod;
+using Masny.Patterns.Behavioral.Visitor;
 using Masny.Patterns.Creational.AbstractFactory;
 using Masny.Patterns.Creational.Builder;
 using Masny.Patterns.Creational.Factory;
@@ -113,6 +114,9 @@ namespace Masny.ConsoleApp
 
             //var interpreterPattern = new InterpreterPattern();
             //interpreterPattern.Start();
+
+            //var visitorPattern = new VisitorPattern();
+            //visitorPattern.Start();
 
             Console.ReadLine();
         }
