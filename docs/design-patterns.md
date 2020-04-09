@@ -8,8 +8,8 @@ Design Patterns in the object-oriented world is a reusable solution to common so
 
 There are 23 design patterns, also known as Gang of Four (GoF) design patterns. The Gang of Four is the authors of the book, "Design Patterns: Elements of Reusable Object-Oriented Software". These 23 patterns are grouped into three main categories: Creational, Structural and Behavioral.
 
-### Navigating the main types of design patterns
+### Navigating the main types of design patterns:
 
-- [Creational Design Pattern]()
-- [Structural Design Patterns]()
-- [Behavioral Design Patterns]()
+- [Creational Design Patterns](https://github.com/MikhailMasny/solid-and-design-patterns/blob/master/docs/creational-design-patterns.md)
+- [Structural Design Patterns](https://github.com/MikhailMasny/solid-and-design-patterns/blob/master/docs/structural-design-patterns.md)
+- [Behavioral Design Patterns](https://github.com/MikhailMasny/solid-and-design-patterns/blob/master/docs/behavioral-design-patterns.md)

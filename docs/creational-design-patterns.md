@@ -1,4 +1,4 @@
-# Creational Design Pattern
+# Creational Design Patterns
 
 These patterns are responsible for the convenient and safe creation of new objects or even entire families of objects.
 
