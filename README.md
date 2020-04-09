@@ -1,2 +1,25 @@
-# solid-and-design-patterns
-A set of useful material of SOLID principles and Design pattern for DotNet developer. This repository collected examples of implementation, useful links, text material and etc.
+# SOLID Principles and Design patterns
+
+Text here
+
+## SOLID Principles
+
+Text here + link
+
+## Design pattern
+
+Text here + link
+
+## Getting Started
+
+Text here
+
+```
+command
+```
+
+## Author
+[Mikhail M.](https://mikhailmasny.github.io/) - Software Engineer;
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md]() file for details.
