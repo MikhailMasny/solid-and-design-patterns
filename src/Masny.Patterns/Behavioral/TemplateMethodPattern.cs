@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.TemplateMethod
 {
@@ -38,7 +39,7 @@ namespace Masny.Patterns.Behavioral.TemplateMethod
         }
     }
 
-    public class TemplateMethodPattern
+    public class TemplateMethodPattern : IExample
     {
         public void Start()
         {

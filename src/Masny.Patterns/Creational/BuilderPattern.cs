@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 
 namespace Masny.Patterns.Creational.Builder
@@ -99,7 +100,7 @@ namespace Masny.Patterns.Creational.Builder
         }
     }
 
-    public class BuilderPattern
+    public class BuilderPattern : IExample
     {
         public void Start()
         {

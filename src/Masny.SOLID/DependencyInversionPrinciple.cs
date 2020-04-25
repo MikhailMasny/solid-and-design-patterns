@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.SOLID.DIP
 {
@@ -41,7 +42,7 @@ namespace Masny.SOLID.DIP
         }
     }
 
-    public class DependencyInversionPrinciple
+    public class DependencyInversionPrinciple : IExample
     {
         public void Start()
         {

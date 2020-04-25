@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.MementoPattern
 {
@@ -48,7 +49,7 @@ namespace Masny.Patterns.Behavioral.MementoPattern
         public Memento Memento { set; get; }
     }
 
-    public class MementoPattern
+    public class MementoPattern : IExample
     {
         public void Start()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Structural.Facade
 {
@@ -56,7 +57,7 @@ namespace Masny.Patterns.Structural.Facade
         }
     }
 
-    public class FacadePattern
+    public class FacadePattern : IExample
     {
         public void Start()
         {

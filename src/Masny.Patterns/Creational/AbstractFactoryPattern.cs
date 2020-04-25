@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Creational.AbstractFactory
 {
@@ -84,7 +85,7 @@ namespace Masny.Patterns.Creational.AbstractFactory
         }
     }
 
-    public class AbstractFactoryPattern
+    public class AbstractFactoryPattern : IExample
     {
         public void Start()
         {

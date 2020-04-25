@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 
 namespace Masny.Patterns.Behavioral.ChainOfResponsibility
@@ -105,7 +106,7 @@ namespace Masny.Patterns.Behavioral.ChainOfResponsibility
         }
     }
 
-    public class ChainOfResponsibilityPattern
+    public class ChainOfResponsibilityPattern : IExample
     {
         public void Start()
         {

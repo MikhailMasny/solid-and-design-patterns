@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections;
 
 namespace Masny.Patterns.Behavioral.Iterator
@@ -74,7 +75,7 @@ namespace Masny.Patterns.Behavioral.Iterator
         }
     }
 
-    public class IteratorPattern
+    public class IteratorPattern : IExample
     {
         public void Start()
         {

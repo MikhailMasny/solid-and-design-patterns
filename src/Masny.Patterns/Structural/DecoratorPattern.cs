@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Structural.Decorator
 {
@@ -58,7 +59,7 @@ namespace Masny.Patterns.Structural.Decorator
         }
     }
 
-    public class DecoratorPattern
+    public class DecoratorPattern : IExample
     {
         public void Start()
         {

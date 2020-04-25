@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Creational.Singleton
 {
@@ -21,7 +22,7 @@ namespace Masny.Patterns.Creational.Singleton
         }
     }
 
-    public class SingletonPattern
+    public class SingletonPattern : IExample
     {
         public void Start()
         {

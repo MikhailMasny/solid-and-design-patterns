@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -72,7 +73,7 @@ namespace Masny.SOLID.SRP
         }
     }
 
-    public class SingleResponsibilityPrinciple
+    public class SingleResponsibilityPrinciple : IExample
     {
         public void Start()
         {

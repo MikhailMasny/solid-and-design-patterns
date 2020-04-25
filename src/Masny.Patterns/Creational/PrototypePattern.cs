@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Creational.Prototype
 {
@@ -32,7 +33,7 @@ namespace Masny.Patterns.Creational.Prototype
         }
     }
 
-    public class PrototypePattern
+    public class PrototypePattern : IExample
     {
         public void Start()
         {

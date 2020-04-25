@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -75,7 +76,7 @@ namespace Masny.SOLID.OCP
         }
     }
 
-    public class OpenClosedPrinciple
+    public class OpenClosedPrinciple : IExample
     {
         public void Start()
         {

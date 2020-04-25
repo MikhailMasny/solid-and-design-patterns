@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.Command
 {
@@ -40,7 +41,7 @@ namespace Masny.Patterns.Behavioral.Command
         }
     }
 
-    public class CommandPattern
+    public class CommandPattern : IExample
     {
         public void Start()
         {

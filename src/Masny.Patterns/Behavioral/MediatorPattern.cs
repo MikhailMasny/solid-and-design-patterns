@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.Mediator
 {
@@ -95,7 +96,7 @@ namespace Masny.Patterns.Behavioral.Mediator
         }
     }
 
-    public class MediatorPattern
+    public class MediatorPattern : IExample
     {
         public void Start()
         {

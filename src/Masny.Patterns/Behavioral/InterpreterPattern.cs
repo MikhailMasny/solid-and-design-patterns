@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections;
 
 namespace Masny.Patterns.Behavioral.Interpreter
@@ -28,7 +29,7 @@ namespace Masny.Patterns.Behavioral.Interpreter
         }
     }
 
-    public class InterpreterPattern
+    public class InterpreterPattern : IExample
     {
         public void Start()
         {

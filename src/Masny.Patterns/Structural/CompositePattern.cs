@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 
 namespace Masny.Patterns.Structural.Composite
@@ -58,7 +59,7 @@ namespace Masny.Patterns.Structural.Composite
         }
     }
 
-    public class CompositePattern
+    public class CompositePattern : IExample
     {
         public void Start()
         {

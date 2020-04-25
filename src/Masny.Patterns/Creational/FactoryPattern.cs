@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -46,7 +47,7 @@ namespace Masny.Patterns.Creational.Factory
         }
     }
 
-    public class FactoryPattern
+    public class FactoryPattern : IExample
     {
         public void Start()
         {

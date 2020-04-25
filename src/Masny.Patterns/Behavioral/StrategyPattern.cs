@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.Strategy
 {
@@ -46,7 +47,7 @@ namespace Masny.Patterns.Behavioral.Strategy
         }
     }
 
-    public class StrategyPattern
+    public class StrategyPattern : IExample
     {
         public void Start()
         {

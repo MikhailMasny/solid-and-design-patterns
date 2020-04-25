@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Structural.Bridge
 {
@@ -52,7 +53,7 @@ namespace Masny.Patterns.Structural.Bridge
         }
     }
 
-    public class BridgePattern
+    public class BridgePattern : IExample
     {
         public void Start()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Structural.Proxy
 {
@@ -30,7 +31,7 @@ namespace Masny.Patterns.Structural.Proxy
         }
     }
 
-    public class ProxyPattern
+    public class ProxyPattern : IExample
     {
         public void Start()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 
 namespace Masny.Patterns.Behavioral.Visitor
@@ -78,7 +79,7 @@ namespace Masny.Patterns.Behavioral.Visitor
         }
     }
 
-    public class VisitorPattern
+    public class VisitorPattern : IExample
     {
         public void Start()
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.SOLID.ISP
 {
@@ -43,7 +44,7 @@ namespace Masny.SOLID.ISP
         }
     }
 
-    public class InterfaceSegregationPrinciple
+    public class InterfaceSegregationPrinciple : IExample
     {
         public void Start()
         {

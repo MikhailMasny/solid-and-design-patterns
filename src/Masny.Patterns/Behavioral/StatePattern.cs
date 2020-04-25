@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 
 namespace Masny.Patterns.Behavioral.State
 {
@@ -44,7 +45,7 @@ namespace Masny.Patterns.Behavioral.State
         }
     }
 
-    public class StatePattern
+    public class StatePattern : IExample
     {
         public void Start()
         {

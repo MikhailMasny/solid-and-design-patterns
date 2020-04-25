@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Linq;
 
 namespace Masny.SOLID.LSP
@@ -41,7 +42,7 @@ namespace Masny.SOLID.LSP
         }
     }
 
-    public class LiskovSubstitutionPrinciple
+    public class LiskovSubstitutionPrinciple : IExample
     {
         public void Start()
         {

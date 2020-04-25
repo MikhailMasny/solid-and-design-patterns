@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Masny.Core;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -98,7 +99,7 @@ namespace Masny.Patterns.Structural.Flyweight
         }
     }
 
-    public class FlyweightPattern
+    public class FlyweightPattern : IExample
     {
         public void Start()
         {

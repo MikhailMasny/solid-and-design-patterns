@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Collections.Generic;
 
 namespace Masny.Patterns.Behavioral.Observer
@@ -63,7 +64,7 @@ namespace Masny.Patterns.Behavioral.Observer
         }
     }
 
-    public class ObserverPattern
+    public class ObserverPattern : IExample
     {
         public void Start()
         {

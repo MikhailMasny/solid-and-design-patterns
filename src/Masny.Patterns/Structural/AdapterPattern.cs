@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Masny.Core;
+using System;
 using System.Text.RegularExpressions;
 
 namespace Masny.Patterns.Structural.Adapter
@@ -30,7 +31,7 @@ namespace Masny.Patterns.Structural.Adapter
         }
     }
 
-    public class AdapterPattern
+    public class AdapterPattern : IExample
     {
         public void Start()
         {
