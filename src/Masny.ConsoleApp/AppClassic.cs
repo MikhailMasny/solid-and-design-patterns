@@ -1,32 +1,4 @@
 ﻿using Masny.Core;
-using Masny.Patterns.Behavioral.ChainOfResponsibility;
-using Masny.Patterns.Behavioral.Command;
-using Masny.Patterns.Behavioral.Interpreter;
-using Masny.Patterns.Behavioral.Iterator;
-using Masny.Patterns.Behavioral.Mediator;
-using Masny.Patterns.Behavioral.MementoPattern;
-using Masny.Patterns.Behavioral.Observer;
-using Masny.Patterns.Behavioral.State;
-using Masny.Patterns.Behavioral.Strategy;
-using Masny.Patterns.Behavioral.TemplateMethod;
-using Masny.Patterns.Behavioral.Visitor;
-using Masny.Patterns.Creational.AbstractFactory;
-using Masny.Patterns.Creational.Builder;
-using Masny.Patterns.Creational.Factory;
-using Masny.Patterns.Creational.Prototype;
-using Masny.Patterns.Creational.Singleton;
-using Masny.Patterns.Structural.Adapter;
-using Masny.Patterns.Structural.Bridge;
-using Masny.Patterns.Structural.Composite;
-using Masny.Patterns.Structural.Decorator;
-using Masny.Patterns.Structural.Facade;
-using Masny.Patterns.Structural.Flyweight;
-using Masny.Patterns.Structural.Proxy;
-using Masny.SOLID.DIP;
-using Masny.SOLID.ISP;
-using Masny.SOLID.LSP;
-using Masny.SOLID.OCP;
-using Masny.SOLID.SRP;
 using System;
 
 namespace Masny.ConsoleApp
@@ -49,6 +21,7 @@ namespace Masny.ConsoleApp
         {
             IExample example;
             var show = new Show();
+            var implementation = new Implementation();
             Console.Clear();
 
             switch (command)
@@ -73,7 +46,7 @@ namespace Masny.ConsoleApp
                 case "patterns":
                     {
                         Display.Pattern();
-                        
+
                     }
                     break;
 
@@ -106,7 +79,7 @@ namespace Masny.ConsoleApp
                 case "srp":
                 case "SRP":
                     {
-                        example = new SingleResponsibilityPrinciple();
+                        example = implementation.GetSingleResponsibilityPrincipleInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -114,7 +87,7 @@ namespace Masny.ConsoleApp
                 case "ocp":
                 case "OCP":
                     {
-                        example = new OpenClosedPrinciple();
+                        example = implementation.GetOpenClosedPrincipleInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -122,7 +95,7 @@ namespace Masny.ConsoleApp
                 case "lsp":
                 case "LSP":
                     {
-                        example = new LiskovSubstitutionPrinciple();
+                        example = implementation.GetLiskovSubstitutionPrincipleInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -130,7 +103,7 @@ namespace Masny.ConsoleApp
                 case "isp":
                 case "ISP":
                     {
-                        example = new InterfaceSegregationPrinciple();
+                        example = implementation.GetInterfaceSegregationPrincipleInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -138,7 +111,7 @@ namespace Masny.ConsoleApp
                 case "dip":
                 case "DIP":
                     {
-                        example = new DependencyInversionPrinciple();
+                        example = implementation.GetDependencyInversionPrincipleInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -149,161 +122,161 @@ namespace Masny.ConsoleApp
 
                 case "chain":
                     {
-                        example = new ChainOfResponsibilityPattern();
+                        example = implementation.GetChainOfResponsibilityPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "command":
                     {
-                        example = new CommandPattern();
+                        example = implementation.GetCommandPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "interpreter":
                     {
-                        example = new InterpreterPattern();
+                        example = implementation.GetInterpreterPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "iterator":
                     {
-                        example = new IteratorPattern();
+                        example = implementation.GetIteratorPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "mediator":
                     {
-                        example = new MediatorPattern();
+                        example = implementation.GetMediatorPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "memento":
                     {
-                        example = new MementoPattern();
+                        example = implementation.GetMementoPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "observer":
                     {
-                        example = new ObserverPattern();
+                        example = implementation.GetObserverPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "state":
                     {
-                        example = new StatePattern();
+                        example = implementation.GetStatePatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "strategy":
                     {
-                        example = new StrategyPattern();
+                        example = implementation.GetStrategyPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "template":
                     {
-                        example = new TemplateMethodPattern();
+                        example = implementation.GetTemplateMethodPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "visitor":
                     {
-                        example = new VisitorPattern();
+                        example = implementation.GetVisitorPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "abstract":
                     {
-                        example = new AbstractFactoryPattern();
+                        example = implementation.GetAbstractFactoryPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "builder":
                     {
-                        example = new BuilderPattern();
+                        example = implementation.GetBuilderPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "factory":
                     {
-                        example = new FactoryPattern();
+                        example = implementation.GetFactoryPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "prototype":
                     {
-                        example = new PrototypePattern();
+                        example = implementation.GetPrototypePatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "singleton":
                     {
-                        example = new SingletonPattern();
+                        example = implementation.GetSingletonPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "adapter":
                     {
-                        example = new AdapterPattern();
+                        example = implementation.GetAdapterPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "bridge":
                     {
-                        example = new BridgePattern();
+                        example = implementation.GetBridgePatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "composite":
                     {
-                        example = new CompositePattern();
+                        example = implementation.GetCompositePatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "decorator":
                     {
-                        example = new DecoratorPattern();
+                        example = implementation.GetDecoratorPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "facade":
                     {
-                        example = new FacadePattern();
+                        example = implementation.GetFacadePatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "flyweight":
                     {
-                        example = new FlyweightPattern();
+                        example = implementation.GetFlyweightPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
 
                 case "proxy":
                     {
-                        example = new ProxyPattern();
+                        example = implementation.GetProxyPatternInstance();
                         show.RunAtApp(example);
                     }
                     break;
@@ -318,7 +291,7 @@ namespace Masny.ConsoleApp
                     }
                     break;
 
-                #endregion Exception (Default)
+                    #endregion Exception (Default)
             }
 
             Choice();
