@@ -81,5 +81,40 @@ namespace Masny.Common
             Console.WriteLine("6. `flyweight` - show implementation of Flyweight Pattern");
             Console.WriteLine("7. `proxy` - show implementation of Proxy Pattern");
         }
+
+        public static void Help()
+        {
+            Console.WriteLine("Usage: [appname].dll [command]");
+            Console.WriteLine("\ncommand:");
+            Console.WriteLine("  -h|--help            show command line help");
+            Console.WriteLine("  -srp|--single        show implementation of Single Responsibility Principle");
+            Console.WriteLine("  -ocp|--open          show implementation of Open Closed Principle");
+            Console.WriteLine("  -lsp|--liskov        show implementation of Liskov Substitution Principle");
+            Console.WriteLine("  -isp|--interface     show implementation of Interface Segregation Principle");
+            Console.WriteLine("  -dip|--dependency    show implementation of Dependency Inversion Principle");
+            Console.WriteLine("  -chn|--chain         show implementation of Chain of responsibility Pattern");
+            Console.WriteLine("  -cmd|--сommand       show implementation of Command Pattern");
+            Console.WriteLine("  -int|--interpreter   show implementation of Interpreter Pattern");
+            Console.WriteLine("  -itr|--iterator      show implementation of Iterator Pattern");
+            Console.WriteLine("  -mdt|--mediator      show implementation of Mediator Pattern");
+            Console.WriteLine("  -mmn|--memento       show implementation of Memento Pattern");
+            Console.WriteLine("  -obs|--observer      show implementation of Observer Pattern");
+            Console.WriteLine("  -stt|--state         show implementation of State Pattern");
+            Console.WriteLine("  -str|--strategy      show implementation of Strategy Pattern");
+            Console.WriteLine("  -tmp|--template      show implementation of Template method Pattern");
+            Console.WriteLine("  -vst|--visitor       show implementation of Visitor Pattern");
+            Console.WriteLine("  -abs|--abstract      show implementation of Abstract factory Pattern");
+            Console.WriteLine("  -fct|--factory       show implementation of Factory Pattern");
+            Console.WriteLine("  -bld|--builder       show implementation of Builder Pattern");
+            Console.WriteLine("  -prt|--prototype     show implementation of Prototype Pattern");
+            Console.WriteLine("  -sng|--singleton     show implementation of Singleton Pattern");
+            Console.WriteLine("  -adp|--adapter       show implementation of Adapter Pattern");
+            Console.WriteLine("  -brd|--bridge        show implementation of Bridge Pattern");
+            Console.WriteLine("  -cmp|--composite     show implementation of Composite Pattern");
+            Console.WriteLine("  -dcr|--decorator     show implementation of Decorator Pattern");
+            Console.WriteLine("  -fcd|--facade        show implementation of Facade Pattern");
+            Console.WriteLine("  -flw|--flyweight     show implementation of Flyweight Pattern");
+            Console.WriteLine("  -prx|--proxy         show implementation of Proxy Pattern");
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace Masny.Common
 {
     public class Show
     {
-        public void RunAtApp(IExample example)
+        public void RunAtConsole(IExample example)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             example.Start();
@@ -18,7 +18,7 @@ namespace Masny.Common
 
         public void RunAtCLI(IExample example)
         {
-            // TODO
+            example.Start();
         }
     }
 }
