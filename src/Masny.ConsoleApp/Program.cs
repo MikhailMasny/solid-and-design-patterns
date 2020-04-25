@@ -34,6 +34,9 @@ namespace Masny.ConsoleApp
     {
         static void Main(string[] args)
         {
+            var app = new Display();
+            app.Start();
+
             //var SRP = new SingleResponsibilityPrinciple();
             //SRP.Start();
 
