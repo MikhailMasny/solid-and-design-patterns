@@ -1,4 +1,5 @@
-﻿using Masny.Core;
+﻿using Masny.Common;
+using Masny.Core;
 using System;
 
 namespace Masny.ConsoleApp
@@ -7,6 +8,7 @@ namespace Masny.ConsoleApp
     {
         public void Start()
         {
+            Display.Start();
             Choice();
         }
 

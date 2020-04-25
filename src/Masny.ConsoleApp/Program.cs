@@ -6,8 +6,6 @@ namespace Masny.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Display.Start();
-
             var app = new AppClassic();
             app.Start();
 

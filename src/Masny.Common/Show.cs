@@ -1,7 +1,7 @@
 ﻿using Masny.Core;
 using System;
 
-namespace Masny.ConsoleApp
+namespace Masny.Common
 {
     public class Show
     {

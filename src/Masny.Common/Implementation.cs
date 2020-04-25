@@ -28,7 +28,7 @@ using Masny.SOLID.LSP;
 using Masny.SOLID.OCP;
 using Masny.SOLID.SRP;
 
-namespace Masny.ConsoleApp
+namespace Masny.Common
 {
     public class Implementation
     {
