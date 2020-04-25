@@ -3,9 +3,9 @@ using System;
 
 namespace Masny.Common
 {
-    public class Show
+    public static class ShowExtension
     {
-        public void RunAtConsole(IExample example)
+        public static void RunAtConsole(this IExample example)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             example.Start();
@@ -16,7 +16,7 @@ namespace Masny.Common
             Display.Menu();
         }
 
-        public void RunAtCLI(IExample example)
+        public static void RunAtCLI(this IExample example)
         {
             example.Start();
         }

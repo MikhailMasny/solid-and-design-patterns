@@ -1,5 +1,4 @@
 ﻿using Masny.Common;
-using Masny.Core;
 
 namespace Masny.AppCLI
 {
@@ -7,8 +6,6 @@ namespace Masny.AppCLI
     {
         public void Start(string[] args)
         {
-            IExample example;
-            var show = new Show();
             var implementation = new Implementation();
 
             // TODO
@@ -25,224 +22,196 @@ namespace Masny.AppCLI
                 case "-srp":
                 case "--single":
                     {
-                        example = implementation.GetSingleResponsibilityPrincipleInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetSingleResponsibilityPrincipleInstance().RunAtCLI();
                     }
                     break;
 
                 case "-ocp":
                 case "--open":
                     {
-                        example = implementation.GetOpenClosedPrincipleInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetOpenClosedPrincipleInstance().RunAtCLI();
                     }
                     break;
 
                 case "-lsp":
                 case "--liskov":
                     {
-                        example = implementation.GetLiskovSubstitutionPrincipleInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetLiskovSubstitutionPrincipleInstance().RunAtCLI();
                     }
                     break;
 
                 case "-isp":
                 case "--interface":
                     {
-                        example = implementation.GetInterfaceSegregationPrincipleInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetInterfaceSegregationPrincipleInstance().RunAtCLI();
                     }
                     break;
 
                 case "--dip":
                 case "--dependency":
                     {
-                        example = implementation.GetDependencyInversionPrincipleInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetDependencyInversionPrincipleInstance().RunAtCLI();
                     }
                     break;
 
                 case "-chn":
                 case "--chain":
                     {
-                        example = implementation.GetChainOfResponsibilityPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetChainOfResponsibilityPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-cmd":
                 case "--сommand":
                     {
-                        example = implementation.GetCommandPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetCommandPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-int":
                 case "--interpreter":
                     {
-                        example = implementation.GetInterpreterPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetInterpreterPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-itr":
                 case "--iterator":
                     {
-                        example = implementation.GetIteratorPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetIteratorPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-mdt":
                 case "--mediator":
                     {
-                        example = implementation.GetMediatorPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetMediatorPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-mmn":
                 case "--memento":
                     {
-                        example = implementation.GetMementoPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetMementoPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-obs":
                 case "--observer":
                     {
-                        example = implementation.GetObserverPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetObserverPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-stt":
                 case "--state":
                     {
-                        example = implementation.GetStatePatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetStatePatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-str":
                 case "--strategy":
                     {
-                        example = implementation.GetStrategyPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetStrategyPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-tmp":
                 case "--template":
                     {
-                        example = implementation.GetTemplateMethodPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetTemplateMethodPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-vst":
                 case "--visitor":
                     {
-                        example = implementation.GetVisitorPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetVisitorPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-abs":
                 case "--abstract":
                     {
-                        example = implementation.GetAbstractFactoryPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetAbstractFactoryPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-fct":
                 case "--factory":
                     {
-                        example = implementation.GetFactoryPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetFactoryPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-bld":
                 case "--builder":
                     {
-                        example = implementation.GetBuilderPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetBuilderPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-prt":
                 case "--prototype":
                     {
-                        example = implementation.GetPrototypePatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetPrototypePatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-sng":
                 case "--singleton":
                     {
-                        example = implementation.GetSingletonPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetSingletonPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-adp":
                 case "--adapter":
                     {
-                        example = implementation.GetAdapterPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetAdapterPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-brd":
                 case "--bridge":
                     {
-                        example = implementation.GetBridgePatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetBridgePatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-cmp":
                 case "--composite":
                     {
-                        example = implementation.GetCompositePatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetCompositePatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-dcr":
                 case "--decorator":
                     {
-                        example = implementation.GetDecoratorPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetDecoratorPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-fcd":
                 case "--facade":
                     {
-                        example = implementation.GetFacadePatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetFacadePatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-flw":
                 case "--flyweight":
                     {
-                        example = implementation.GetFlyweightPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetFlyweightPatternInstance().RunAtCLI();
                     }
                     break;
 
                 case "-prx":
                 case "--proxy":
                     {
-                        example = implementation.GetProxyPatternInstance();
-                        show.RunAtCLI(example);
+                        implementation.GetProxyPatternInstance().RunAtCLI();
                     }
                     break;
             }

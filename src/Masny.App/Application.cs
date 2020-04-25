@@ -21,8 +21,6 @@ namespace Masny.ConsoleApp
 
         private void Command(string command)
         {
-            IExample example;
-            var show = new Show();
             var implementation = new Implementation();
             Console.Clear();
 
@@ -81,40 +79,35 @@ namespace Masny.ConsoleApp
                 case "srp":
                 case "SRP":
                     {
-                        example = implementation.GetSingleResponsibilityPrincipleInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetSingleResponsibilityPrincipleInstance().RunAtConsole();
                     }
                     break;
 
                 case "ocp":
                 case "OCP":
                     {
-                        example = implementation.GetOpenClosedPrincipleInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetOpenClosedPrincipleInstance().RunAtConsole();
                     }
                     break;
 
                 case "lsp":
                 case "LSP":
                     {
-                        example = implementation.GetLiskovSubstitutionPrincipleInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetLiskovSubstitutionPrincipleInstance().RunAtConsole();
                     }
                     break;
 
                 case "isp":
                 case "ISP":
                     {
-                        example = implementation.GetInterfaceSegregationPrincipleInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetInterfaceSegregationPrincipleInstance().RunAtConsole();
                     }
                     break;
 
                 case "dip":
                 case "DIP":
                     {
-                        example = implementation.GetDependencyInversionPrincipleInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetDependencyInversionPrincipleInstance().RunAtConsole();
                     }
                     break;
 
@@ -124,162 +117,139 @@ namespace Masny.ConsoleApp
 
                 case "chain":
                     {
-                        example = implementation.GetChainOfResponsibilityPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetChainOfResponsibilityPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "command":
                     {
-                        example = implementation.GetCommandPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetCommandPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "interpreter":
                     {
-                        example = implementation.GetInterpreterPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetInterpreterPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "iterator":
                     {
-                        example = implementation.GetIteratorPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetIteratorPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "mediator":
                     {
-                        example = implementation.GetMediatorPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetMediatorPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "memento":
                     {
-                        example = implementation.GetMementoPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetMementoPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "observer":
                     {
-                        example = implementation.GetObserverPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetObserverPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "state":
                     {
-                        example = implementation.GetStatePatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetStatePatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "strategy":
                     {
-                        example = implementation.GetStrategyPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetStrategyPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "template":
                     {
-                        example = implementation.GetTemplateMethodPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetTemplateMethodPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "visitor":
                     {
-                        example = implementation.GetVisitorPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetVisitorPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "abstract":
                     {
-                        example = implementation.GetAbstractFactoryPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetAbstractFactoryPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "builder":
                     {
-                        example = implementation.GetBuilderPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetBuilderPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "factory":
                     {
-                        example = implementation.GetFactoryPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetFactoryPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "prototype":
                     {
-                        example = implementation.GetPrototypePatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetPrototypePatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "singleton":
                     {
-                        example = implementation.GetSingletonPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetSingletonPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "adapter":
                     {
-                        example = implementation.GetAdapterPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetAdapterPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "bridge":
                     {
-                        example = implementation.GetBridgePatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetBridgePatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "composite":
                     {
-                        example = implementation.GetCompositePatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetCompositePatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "decorator":
                     {
-                        example = implementation.GetDecoratorPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetDecoratorPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "facade":
                     {
-                        example = implementation.GetFacadePatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetFacadePatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "flyweight":
                     {
-                        example = implementation.GetFlyweightPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetFlyweightPatternInstance().RunAtConsole();
                     }
                     break;
 
                 case "proxy":
                     {
-                        example = implementation.GetProxyPatternInstance();
-                        show.RunAtConsole(example);
+                        implementation.GetProxyPatternInstance().RunAtConsole();
                     }
                     break;
 
