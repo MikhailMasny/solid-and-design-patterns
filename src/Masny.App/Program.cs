@@ -4,7 +4,7 @@ namespace Masny.ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var app = new AppClassic();
             app.Start();
