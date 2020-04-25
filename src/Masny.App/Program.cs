@@ -6,7 +6,7 @@ namespace Masny.ConsoleApp
     {
         static void Main()
         {
-            var app = new AppClassic();
+            var app = new Application();
             app.Start();
 
             Console.ReadKey();

@@ -4,7 +4,7 @@ using System;
 
 namespace Masny.ConsoleApp
 {
-    public class AppClassic
+    public class Application
     {
         public void Start()
         {
