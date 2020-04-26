@@ -1,5 +1,7 @@
 # SOLID Principles and Design patterns
 
+![.NET Core](https://github.com/MikhailMasny/solid-and-design-patterns/workflows/.NET%20Core/badge.svg)
+
 The main idea of the applications (App CLI and App Console) is to compile a list of all design patterns and SOLID principles, and combine them into one solution for simplicity and ease of use, a review of examples and source code. This repository has a convenient navigation for finding the necessary material.
 
 ## SOLID Principles
@@ -12,9 +14,9 @@ The main design patterns are presented [here](https://github.com/MikhailMasny/so
 
 ## Getting Started
 
-When the App Console launches, the user is presented with a menu with available commands and it becomes possible to select the necessary material to demonstrate the operation of the design pattern or SOLID principle.
+When the App Console (or App CLI) launches, the user is presented with a menu with available commands and it becomes possible to select the necessary material to demonstrate the operation of the design pattern or SOLID principle.
 
-### Installing
+### Run
 
 To start the console application, you need to run the command:
 
